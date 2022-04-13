@@ -35,31 +35,33 @@
                 <div class="form-row">
                     <div class="input-group">
                         <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="first-name">
+                        <input type="text" id="first-name" name="first-name" required>
                     </div>
                     <div class="input-group">
                         <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name" name="last-name">
+                        <input type="text" id="last-name" name="last-name" required>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="input-group">
                         <label for="user-email">Email</label>
-                        <input type="email" id="user-email" name="user-email">
+                        <input type="email" id="user-email" name="user-email" placeholder=" " required>
                     </div>
                     <div class="input-group">
                         <label for="phone-number">Phone Number</label>
-                        <input type="tel" id="phone-number" name="phone-number">
+                        <input type="tel" id="phone-number" name="phone-number" placeholder="123-456-7890"
+                            pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+                            title="Please use a 10 digit phone number format with dashes (e.g., 123-456-7890)">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="input-group">
                         <label for="user-pass">Password</label>
-                        <input type="password" id="user-pass" name="user-password">
+                        <input type="password" id="user-pass" name="user-password" required class="error">
                     </div>
                     <div class="input-group">
-                        <label for="user-pass">Confirm Password</label>
-                        <input type="password" id="user-pass" name="user-password">
+                        <label for="confirm-pass">Confirm Password</label>
+                        <input type="password" id="confirm-pass" name="confirm-password" required class="error">
                     </div>
                 </div>
             </form>
