@@ -31,7 +31,7 @@
         </div>
         <div class="form-container">
             <h1>Let's do this!</h1>
-            <form action="" method="post">
+            <form id="sign-up-form" action="" method="post">
                 <div class="form-row">
                     <div class="input-group">
                         <label for="first-name">First Name</label>
@@ -57,24 +57,28 @@
                 <div class="form-row">
                     <div class="input-group">
                         <label for="user-pass">Password</label>
-                        <input type="password" id="user-pass" name="user-password" required class="error">
+                        <input class="unmatched" type="password" id="user-pass" name="user-password" required">
+                        <p id="password-warning">* Passwords must match.</p>
                     </div>
                     <div class="input-group">
                         <label for="confirm-pass">Confirm Password</label>
-                        <input type="password" id="confirm-pass" name="confirm-password" required class="error">
+                        <input class="unmatched" type="password" id="confirm-pass" name="confirm-password" required>
+
                     </div>
                 </div>
             </form>
         </div>
         <div class="submit-and-footer">
 
-            <button type="button" id="submit-button">Create Account</button>
+            <button type="submit" id="submit-button" form="sign-up-form">Create Account</button>
             <div class="login-option">
                 <p>
                     Already have an account? <a href="#">Log in</a></p>
             </div>
         </div>
     </div>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
